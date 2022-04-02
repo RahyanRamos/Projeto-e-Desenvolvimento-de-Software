@@ -1,0 +1,19 @@
+﻿<Window x:Class="Atividade1e2.InicioWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Atividade1e2"
+        mc:Ignorable="d"
+        Title="Calculo de IMC" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFBAEFD3">
+        <Label Content="Cálculo de IMC" HorizontalAlignment="Center" Margin="0, 50" VerticalAlignment="Top" Width="800" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF00FF9C" FontSize="20" FontWeight="Bold" Grid.ColumnSpan="4"/>
+        <Label Content="Resultado" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Height="30" Margin="0,316,0,0" FontSize="15"/>
+        <Label Content="Altura (m)" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Height="30" FontSize="15" Margin="184,110,0,0"/>
+        <Label Content="Peso (kg)" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold" Height="30" FontSize="15" Margin="0,110,184,0"/>
+        <TextBox x:Name="txtResultado" Width="150" Height="50" VerticalAlignment="Bottom" Margin="20" IsEnabled="False" FontSize="20" TextAlignment="Center"  Padding="3 10"/>
+        <TextBox x:Name="txtAltura" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="150,140,0,0" FontSize="20" TextAlignment="Center" Padding="3 10" KeyDown="txtAltura_KeyDown"/>
+        <TextBox x:Name="txtPeso" Width="150" Height="50" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,140,150,0" FontSize="20" TextAlignment="Center" Padding="3 10" KeyDown="txtPeso_KeyDown"/>
+        <Button x:Name="btCalcular" Content="Calcular" Width="150" Height="50" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="150" FontSize="25" FontWeight="Bold" Background="#FF26B509" Click="btCalcular_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,26 @@
+﻿<Window x:Class="Atividade1e2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Atividade1e2"
+        mc:Ignorable="d"
+        Title="LOGIN" Height="500" Width="300" Background="White" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFBAEFD3" Cursor="Arrow">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="339*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <PasswordBox x:Name="pwSenha" HorizontalAlignment="Center" Margin="50,168,50,224" VerticalAlignment="Center" Width="140" Height="43" Grid.Column="2" Padding="3 10" Visibility="Visible" KeyDown="pwSenha_KeyDown"/>
+        <TextBox x:Name="txtAcesso" HorizontalAlignment="Center" Margin="50,92,50,290" TextWrapping="Wrap" VerticalAlignment="Center" Width="140" Height="47" TextAlignment="Justify" FontSize="14" FontWeight="Bold" Grid.Column="2" AutomationProperties.Name="tb.acesso" Padding="3 10" KeyDown="txtAcesso_KeyDown"/>
+        <Button Content="ACESSAR" HorizontalAlignment="Center" Margin="50,256,50,85" VerticalAlignment="Center" Height="52" Width="104" Click="Button_Click" FontSize="16" FontWeight="Bold" Background="#FF26B509" Grid.Column="2" AutomationProperties.Name="bt.acessar"/>
+        <Label x:Name="login" Content="Login" HorizontalAlignment="Center" Margin="0,50,0,50" VerticalAlignment="Top" Width="301" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF00FF9C" FontSize="20" FontWeight="Bold" Grid.ColumnSpan="4"/>
+        <Label Content="Acesso" HorizontalAlignment="Center" Margin="50,63,50,325" VerticalAlignment="Center" HorizontalContentAlignment="Left" FontWeight="Bold" Grid.Column="2"/>
+        <Label Content="Senha" HorizontalAlignment="Center" Margin="50,145,50,270" VerticalAlignment="Center" FontWeight="Bold" Grid.Column="2"/>
+        <CheckBox x:Name="sbRobo" Grid.Column="2" Content="Não sou um robô" HorizontalAlignment="Center" Margin="50,235,50,180" VerticalAlignment="Center" Background="#FF08A8EC" FontWeight="Bold" FontSize="14" Width="140" AutomationProperties.Name="sb.robo"/>
+        <Label Grid.Column="2" Content="Esqueceu a senha?" HorizontalAlignment="Center" Margin="50,330,50,44" VerticalAlignment="Center" Foreground="#FF0083AF" FontSize="15" Cursor="Hand"/>
+        <Label Grid.Column="2" Content="Cadastrar" HorizontalAlignment="Center" Margin="50,364,50,8" VerticalAlignment="Center" Foreground="#FF0084FF" FontSize="15" Cursor="Hand"/>
+    </Grid>
+</Window>
